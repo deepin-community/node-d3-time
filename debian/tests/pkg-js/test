@@ -1,0 +1,1 @@
+TZ=America/Los_Angeles tape 'test/**/*-test.js' && test/test-time-zones

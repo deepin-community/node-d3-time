@@ -1,0 +1,55 @@
+node-d3-time (1.0.11-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-d3-time: Add Multi-Arch: foreign.
+
+  [ Pirate Praveen ]
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Use dh-sequence-nodejs auto install
+  * Enable nocheck build profile
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 16 Dec 2020 17:09:41 +0530
+
+node-d3-time (1.0.11-3) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Make build reproducible
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 07 Jul 2019 11:19:11 +0530
+
+node-d3-time (1.0.11-2) experimental; urgency=medium
+
+  * Install ES module (src directory)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 19 Jun 2019 15:21:23 +0530
+
+node-d3-time (1.0.11-1) experimental; urgency=medium
+
+  * New upstream version 1.0.11
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Switch to rollup from webpack for build (rollup is now in main)
+  * Switch to pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 15 Jun 2019 12:22:34 +0530
+
+node-d3-time (1.0.7-2) unstable; urgency=medium
+
+  * Use webpack to build umd module like upstream
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 06 Jan 2018 15:17:10 +0530
+
+node-d3-time (1.0.7-1) unstable; urgency=low
+
+  * Initial release (Closes: #877617)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 03 Oct 2017 19:26:49 +0530

@@ -3,24 +3,22 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Build-Depends:
- debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
- , nodejs
+ , node-rollup-plugin-terser
  , node-tape <!nocheck>
  , rollup
- , node-rollup-plugin-terser
-Standards-Version: 4.5.1
-Homepage: https://d3js.org/d3-time/
-Vcs-Git: https://salsa.debian.org/js-team/node-d3-time.git
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-d3-time
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-time.git
+Homepage: https://d3js.org/d3-time/
 Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-d3-time
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Provides: ${nodejs:Provides}
 Multi-Arch: foreign
 Description: calculator for humanity’s peculiar conventions of time
  The d3-time module does not implement its own calendaring system; it merely
